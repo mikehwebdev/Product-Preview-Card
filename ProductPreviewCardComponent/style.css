@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(100, 100%, 100%);
+  border-radius: 10px 10px;
+}
+
+.product-image {
+  border-radius: 10px 10px 0 0;
+  width: 340px;
+  background-repeat: no-repeat;
+  background-image: url("img/image-product-mobile.jpg");
+  background-size:contain;
+  height: 240px;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+}
+
+span {
+  text-transform: uppercase;
+}
+
+.category {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color:hsl(228, 12%, 48%);
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin: 1.5rem 0 1.25rem 0;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.perfume-description, .original-price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color:hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.pricing-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.discounted-price {
+  color:hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  margin: 0 0 0 16px;
+  align-self: center;
+}
+button {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(100, 100%, 100%);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 7px;
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 18%);
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+@media (min-width:680px) {
+  .product-image  {
+    width: 300px;
+    background-image: url("img/image-product-desktop.jpg");
+    height:450px;
+    border-radius: 10px 0 0 10px;
+}
+
+  .card {
+    width: 600px;
+    flex-direction: row;
+  }
+
+  .product-info-container {
+    padding: 0 30px;
+  }
+  
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  .perfume-description {
+    margin-bottom: 24px;
+  }
+
+  .pricing-container {
+    margin-bottom: 24px;
+  }
+}
